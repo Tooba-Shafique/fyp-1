@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
 import FeatureSection from "./components/FeatureSection";
 import Footer from "./components/Footer";
@@ -16,14 +17,14 @@ import PageLayout from "./components/PageLayout";
 import ScrollToTop from "./components/ScrollToTop";
 import DiscoverHope from "./components/DiscoverHope";
 import SelfLoveBlog from "./components/SelfLoveBlog";
-import SelfCareBlog from "./components/SelfLoveBlog";
 import SelfCareTips from "./components/SelfCareTips";
-import SignUp from "./components/SignUp"
+import SignUp from "./components/SignUp";
+import ChatBot from "./components/Chatbot"; // ✅ Make sure this file includes createChat logic
+
 const App = () => {
   return (
     <Router>
       <ScrollToTop />
-      
       <Navbar />
 
       <Routes>
@@ -44,7 +45,7 @@ const App = () => {
           element={
             <PageLayout>
               <Depression />
-              <DiscoverHope/>
+              <DiscoverHope />
             </PageLayout>
           }
         />
@@ -80,7 +81,7 @@ const App = () => {
             </PageLayout>
           }
         />
-         <Route
+        <Route
           path="/selfloveblog"
           element={
             <PageLayout>
@@ -96,6 +97,22 @@ const App = () => {
             </PageLayout>
           }
         />
+        <Route
+          path="/signup"
+          element={
+            <PageLayout>
+              <SignUp />
+            </PageLayout>
+          }
+        />
+        <Route
+          path="/chatbot"
+          element={
+            <PageLayout>
+              <ChatBot />
+            </PageLayout>
+          }
+        />
       </Routes>
 
       <Footer />
@@ -103,6 +120,4 @@ const App = () => {
   );
 };
 
-export default App; 
-
-
+export default App;

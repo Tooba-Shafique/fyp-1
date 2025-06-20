@@ -54,12 +54,15 @@ const DiscoverHope = () => {
         </p>
 
         <div className="mt-6">
-          <a
-            href="/"
-            className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-3 px-6 md:px-8 rounded-lg transition-all duration-300 text-lg"
-          >
-            Back to Home
-          </a>
+       <div className="flex justify-center mt-4">
+  <a
+    href="/"
+    className="bg-orange-500 hover:bg-orange-700 text-white font-medium py-1.5 px-4 text-sm rounded-md transition-all duration-300"
+  >
+    Back to Home
+  </a>
+</div>
+
         </div>
       </div>
     </div>

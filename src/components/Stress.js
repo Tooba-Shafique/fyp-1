@@ -133,20 +133,13 @@ const Stress = () => {
 
         {/* Call to Action Buttons */}
         <div className="text-center mt-10 space-x-4">
-          <a
-            href="/Home2"
-            className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 text-lg"
-          >
-            Back to Home
-          </a>
-
-          <a
-            href="/discover-hope"
-            className="bg-red-600 hover:bg-red-800 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 text-lg"
-          >
-            Discover Hope
-          </a>
-        </div>
+         <a
+    href="/"
+    className="bg-orange-500 hover:bg-orange-700 text-white font-medium py-1.5 px-4 text-sm rounded-md transition-all duration-300"
+  >
+    Back to Home
+  </a>
+</div>
       </div>
     </div>
   );
